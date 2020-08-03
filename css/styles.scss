@@ -3,11 +3,9 @@
 
 // header
 
-
-.about {
+.header-about {
     @include flexCenter(column);
     margin: 6rem 15rem;
-    border: 2px solid red;
     flex: 1;
 
         img {
@@ -35,7 +33,6 @@
 // my work container
 
 .work {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,11 +68,48 @@
                     }
 
                 }
-
-
-
         }
 
+    }
+}
+
+// about container
+
+.about {
+    @include flexCenter(column);
+    width: 100vw;
+    padding: 2rem 0;
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+
+            .about-item {
+                margin: 1rem 0;
+
+                h3 {
+                    font-weight: weights(regular);
+                    border-bottom: 6px solid $pink;
+                    display: inline-block;
+                    line-height: 5px;
+                    margin: 5px 0 
+
+                }
+            }
+    }
+}
+
+// footer
+
+footer {
+    height: 10vh;
+    @include flexCenter(column);
+    border-top: 3px solid $pink;
+
+    p {
+        font-size: .8rem;
+        font-weight: weights(light);
     }
 }
 

@@ -9,6 +9,7 @@
 html {
   font-size: 15px;
   font-family: "Fira Code", sans-serif;
+  color: #5e6472;
 }
 
 @media (min-width: 376px) {
@@ -66,7 +67,7 @@ html {
   }
 }
 
-.about {
+.header-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,17 +82,16 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin: 6rem 15rem;
-  border: 2px solid red;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.about img {
+.header-about img {
   max-width: 12rem;
 }
 
-.about p {
+.header-about p {
   margin: 2rem;
   padding: 0 2rem;
   text-align: center;
@@ -99,7 +99,7 @@ html {
   position: relative;
 }
 
-.about p span {
+.header-about p span {
   border-bottom: 6px solid #ffa69e;
   display: inline-block;
   line-height: 5px;
@@ -107,7 +107,6 @@ html {
 }
 
 .work {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,5 +183,69 @@ html {
 .work .work-container .row .work-item h3 {
   font-weight: 300;
   font-size: 1rem;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  padding: 2rem 0;
+}
+
+.about .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70vw;
+}
+
+.about .about-container .about-item {
+  margin: 1rem 0;
+}
+
+.about .about-container .about-item h3 {
+  font-weight: 400;
+  border-bottom: 6px solid #ffa69e;
+  display: inline-block;
+  line-height: 5px;
+  margin: 5px 0;
+}
+
+footer {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 3px solid #ffa69e;
+}
+
+footer p {
+  font-size: .8rem;
+  font-weight: 300;
 }
 /*# sourceMappingURL=styles.css.map */
