@@ -1,0 +1,61 @@
+
+
+// colors
+
+$pink: #ffa69e;
+$cream: #faf3dd;
+$teal: #b8f2e6;
+$blue: #aed9e0;
+$dark: #5e6472;
+
+// fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap');
+
+$main: 'Fira Code', sans-serif;
+
+$font-weights: (
+    'light': 300,
+    'regular': 400,
+    'semi': 600,
+    'bold': 500
+);
+
+@function weights($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+// devices
+
+@mixin mobile {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 376px) {
+        @content;
+    }
+}
+
+// positioning
+
+@mixin flexCenter($flex-direction) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: center;
+    align-items: center;
+}
+
+// resets
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: $main;
+}

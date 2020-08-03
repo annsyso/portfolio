@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Fira Code", sans-serif;
+}
+
+@media (min-width: 376px) {
+  header {
+    height: 100vh;
+  }
+  header h1 {
+    color: #ffa69e;
+  }
+  header .navbar {
+    height: 10vh;
+    border-bottom: 3px solid #ffa69e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #5e6472;
+    padding: 0 3rem;
+  }
+  header .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .navbar ul li {
+    list-style: none;
+  }
+  header .navbar ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #5e6472;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  header .navbar ul li a:hover, header .navbar ul li a:active {
+    color: #ffa69e;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

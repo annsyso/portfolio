@@ -1,0 +1,45 @@
+@include desktop {
+    header {
+        height: 100vh;
+
+        h1 {
+            color: $pink;
+        }
+
+
+        .navbar {
+            height: 10vh;
+            border-bottom: 3px solid $pink;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            color: $dark;
+            padding: 0 3rem;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        cursor: pointer;
+                        color: $dark;
+                        margin-left: 2rem;
+                        font-size: 1.1rem;
+                        font-weight: weights(light);
+
+                        &:hover,
+                        &:active {
+                            color: $pink;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
