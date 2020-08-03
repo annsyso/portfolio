@@ -17,6 +17,7 @@ html {
   }
   header h1 {
     color: #ffa69e;
+    font-size: 1.4rem;
   }
   header .navbar {
     height: 10vh;
@@ -63,5 +64,45 @@ html {
   header .navbar ul li a:hover, header .navbar ul li a:active {
     color: #ffa69e;
   }
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 6rem 15rem;
+  border: 2px solid red;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.about img {
+  max-width: 12rem;
+}
+
+.about p {
+  margin: 2rem;
+  padding: 0 2rem;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.about p span {
+  border-bottom: 6px solid #ffa69e;
+  display: inline-block;
+  line-height: 5px;
+  margin: 5px 0;
 }
 /*# sourceMappingURL=styles.css.map */
