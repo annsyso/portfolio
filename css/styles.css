@@ -328,6 +328,7 @@ html {
 #header h1 {
   color: #ffa69e;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 #header .navbar {
@@ -353,6 +354,16 @@ html {
   padding: 0 3rem;
 }
 
+#header .navbar .main-menu li {
+  list-style: none;
+}
+
+#header .navbar .main-menu li a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 300;
+}
+
 @media (min-width: 769px) {
   .navbar .open-menu i {
     display: none;
@@ -361,24 +372,24 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar .main-menu .closed-menu {
     display: none;
   }
-  .navbar .main-menu li {
-    list-style: none;
-  }
   .navbar .main-menu li a {
-    text-decoration: none;
-    cursor: pointer;
     color: #5e6472;
     margin-left: 2rem;
-    font-size: 1.1rem;
-    font-weight: 300;
   }
   .navbar .main-menu li a:hover, .navbar .main-menu li a:active {
     color: #ffa69e;
@@ -386,9 +397,6 @@ html {
 }
 
 @media (max-width: 768px) {
-  .navbar .logo {
-    cursor: pointer;
-  }
   .navbar .open-menu {
     display: block;
     font-size: 1.5rem;
@@ -434,9 +442,8 @@ html {
   .navbar .main-menu li a {
     display: inline-block;
     padding: 15px;
-    text-decoration: none;
     color: #fff;
-    cursor: pointer;
+    font-size: 1.5rem;
   }
   .navbar .main-menu li a:hover {
     color: #5e6472;

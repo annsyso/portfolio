@@ -11,6 +11,7 @@
     h1 {
       color: $pink;
       font-size: 1.4rem;
+      cursor: pointer;
     }
 
     .navbar {
@@ -23,6 +24,18 @@
       justify-content: space-between;
       color: $dark;
       padding: 0 3rem;
+
+        .main-menu {
+          li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                font-weight: weights(light);
+            }
+          }
+        }
     }
 }
 
@@ -30,30 +43,26 @@
 @include desktop {
 
   .navbar {
+
       .open-menu {
-        i {
-          display: none;
-        }
+          i {
+            display: none;
+          }
       }
 
       .main-menu {
           display: flex;
-          flex-direction: row;
+          @include flexCenter(row);
 
           .closed-menu {
             display: none;
           }
 
           li {
-              list-style: none;
 
               a {
-                  text-decoration: none;
-                  cursor: pointer;
                   color: $dark;
                   margin-left: 2rem;
-                  font-size: 1.1rem;
-                  font-weight: weights(light);
 
                   &:hover,
                   &:active {
@@ -67,14 +76,11 @@
 
 
 
-// mobile navigation styling TBD
+// mobile navigation styling
 
 @include mobile {
 
   .navbar {
-    .logo {
-      cursor: pointer;
-    }
 
     .open-menu {
       display:block;
@@ -109,13 +115,11 @@
         }
 
         li {
-
           a{
             display: inline-block;
             padding: 15px;
-            text-decoration: none;
             color: #fff;
-            cursor: pointer;
+            font-size: 1.5rem;
 
             &:hover {
               color: $dark;
