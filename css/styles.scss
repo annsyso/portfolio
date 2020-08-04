@@ -6,53 +6,129 @@
 
 // NAVIGATION - do not change - same for every page
 
-// desktop navigation styling
-@include desktop {
+#header {
 
-    #header {
+    h1 {
+      color: $pink;
+      font-size: 1.4rem;
+    }
 
-        h1 {
-            color: $pink;
-            font-size: 1.4rem;
-        }
-        .navbar {
-            height: 10vh;
-            border-bottom: 3px solid $pink;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            justify-content: space-between;
-            color: $dark;
-            padding: 0 3rem;
-
-            ul {
-                display: flex;
-                flex-direction: row;
-
-                li {
-                    list-style: none;
-
-                    a {
-                        text-decoration: none;
-                        cursor: pointer;
-                        color: $dark;
-                        margin-left: 2rem;
-                        font-size: 1.1rem;
-                        font-weight: weights(light);
-
-                        &:hover,
-                        &:active {
-                            color: $pink;
-                        }
-                    }
-                }
-            }
-        }
+    .navbar {
+      height: 10vh;
+      border-bottom: 3px solid $pink;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      color: $dark;
+      padding: 0 3rem;
     }
 }
 
+// desktop navigation styling
+@include desktop {
+
+  .navbar {
+      .open-menu {
+        i {
+          display: none;
+        }
+      }
+
+      .main-menu {
+          display: flex;
+          flex-direction: row;
+
+          .closed-menu {
+            display: none;
+          }
+
+          li {
+              list-style: none;
+
+              a {
+                  text-decoration: none;
+                  cursor: pointer;
+                  color: $dark;
+                  margin-left: 2rem;
+                  font-size: 1.1rem;
+                  font-weight: weights(light);
+
+                  &:hover,
+                  &:active {
+                      color: $pink;
+                  }
+              }
+          }
+      }
+  }
+}
+
+
+
 // mobile navigation styling TBD
+
+@include mobile {
+
+  .navbar {
+    .logo {
+      cursor: pointer;
+    }
+
+    .open-menu {
+      display:block;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+      .main-menu {
+        list-style: none;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        @include flexCenter(column);
+        background-color: $pink;
+        transition: top 1s ease;
+        display: none;
+        font-size: 1.8rem; 
+
+        .closed-menu {
+          display: block;
+          position: absolute;
+          top: 1.5rem;
+          right: 3rem;
+          color: #fff;
+
+          &:hover {
+            color: $dark;
+          }
+        }
+
+        li {
+
+          a{
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover {
+              color: $dark;
+            }
+        }
+      }
+    }
+  }
+}
+
+
+
+
 
 // FOOTER - do not change - same for every page - DESKTOP AND MOBILE
 
@@ -70,7 +146,8 @@ footer {
     i {
         color: $pink;
     }
-}
+  }
+
 
 body {
     border: 2px solid black;

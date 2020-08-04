@@ -11,21 +11,25 @@
 
 <body>
     <header id="header">
-        <div id="navbar" class="navbar">
-            <h1 class="logo">
-                annie syso.
-            </h1>
-            <nav>
-                <ul>
+        <nav class="navbar">
+            <div class="logo">
+                <h1 class="logo">annie syso.</h1>
+            </div>
+
+            <div class="open-menu"><i class="fa fa-bars"></i></div>
+                <ul class="main-menu">
                     <li><a href="#home">home</a></li>
                     <li><a href="#work">work</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#"><i class="fa fa-github"></i></a></li>
                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                    <div class="closed-menu"><i class="fa fa-times"></i></div>
                 </ul>
-            </nav>
         </div>
-    </header>
+
+    </nav>
+</header>
 
     <section class="project-header">
         <h1>title of project</h1>
@@ -45,6 +49,8 @@
     <footer>
         <p>made with <i class="fa fa-heart"></i> by annie. &copy; 2020</p>
     </footer>
+
+    <script src="../js/script.js"></script>
     
 </body>
 </html>

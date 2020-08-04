@@ -203,7 +203,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem 3rem;
-  border: 2px solid purple;
+  border: 2px solid red;
 }
 
 .project-header h1 {
@@ -325,34 +325,39 @@ html {
   color: #ffa69e;
 }
 
+#header h1 {
+  color: #ffa69e;
+  font-size: 1.4rem;
+}
+
+#header .navbar {
+  height: 10vh;
+  border-bottom: 3px solid #ffa69e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #5e6472;
+  padding: 0 3rem;
+}
+
 @media (min-width: 769px) {
-  #header h1 {
-    color: #ffa69e;
-    font-size: 1.4rem;
+  .navbar .open-menu i {
+    display: none;
   }
-  #header .navbar {
-    height: 10vh;
-    border-bottom: 3px solid #ffa69e;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    color: #5e6472;
-    padding: 0 3rem;
-  }
-  #header .navbar ul {
+  .navbar .main-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -361,10 +366,13 @@ html {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #header .navbar ul li {
+  .navbar .main-menu .closed-menu {
+    display: none;
+  }
+  .navbar .main-menu li {
     list-style: none;
   }
-  #header .navbar ul li a {
+  .navbar .main-menu li a {
     text-decoration: none;
     cursor: pointer;
     color: #5e6472;
@@ -372,8 +380,66 @@ html {
     font-size: 1.1rem;
     font-weight: 300;
   }
-  #header .navbar ul li a:hover, #header .navbar ul li a:active {
+  .navbar .main-menu li a:hover, .navbar .main-menu li a:active {
     color: #ffa69e;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .logo {
+    cursor: pointer;
+  }
+  .navbar .open-menu {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .navbar .main-menu {
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ffa69e;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
+    display: none;
+    font-size: 1.8rem;
+  }
+  .navbar .main-menu .closed-menu {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    color: #fff;
+  }
+  .navbar .main-menu .closed-menu:hover {
+    color: #5e6472;
+  }
+  .navbar .main-menu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .navbar .main-menu li a:hover {
+    color: #5e6472;
   }
 }
 

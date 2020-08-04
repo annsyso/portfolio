@@ -4,7 +4,7 @@
 .project-header {
     @include flexCenter(column);
     margin: 1rem 3rem;
-    border: 2px solid purple;
+    border: 2px solid red;
 
         h1 {
             color: $dark;
