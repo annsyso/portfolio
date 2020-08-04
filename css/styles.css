@@ -357,6 +357,18 @@ html {
   cursor: pointer;
 }
 
+#header i {
+  color: rgba(255, 166, 158, 0.5);
+}
+
+#header i.down {
+  font-size: 1.3rem;
+}
+
+#header i:hover {
+  color: #ffa69e;
+}
+
 #header .navbar {
   height: 10vh;
   border-bottom: 3px solid #ffa69e;
