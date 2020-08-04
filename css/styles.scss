@@ -130,7 +130,24 @@
   }
 }
 
+// BACK TO TOP 
 
+.top {
+  height:10vh;
+  font-size: 1.5rem;
+  @include flexCenter(column);
+
+    a {
+      text-decoration: none;
+      color: rgba($pink, 0.5);
+      cursor: pointer;
+
+        &:hover {
+          color: $pink;
+        }
+
+    }
+}
 
 
 
@@ -151,8 +168,3 @@ footer {
         color: $pink;
     }
   }
-
-
-body {
-    border: 2px solid black;
-}

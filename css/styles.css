@@ -202,8 +202,8 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem 3rem;
-  border: 2px solid red;
+  margin: 1rem 4rem;
+  text-align: center;
 }
 
 .project-header h1 {
@@ -220,6 +220,7 @@ html {
   font-weight: 400;
   font-size: 1.1rem;
   margin-bottom: .8rem;
+  padding: 0 5rem;
 }
 
 .project-header p {
@@ -242,21 +243,41 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 3rem;
+  text-align: center;
 }
 
-.project-images img {
-  margin: 1rem;
+.project-images a {
+  text-decoration: none;
+  color: #ffa69e;
+}
+
+.project-images p {
+  margin: 0 6rem;
+}
+
+@media (max-width: 768px) {
+  .project-images p {
+    margin: 0 2rem;
+  }
+}
+
+.project-images img, .project-images iframe {
+  border: 2px solid red;
 }
 
 @media (min-width: 769px) {
-  .project-images img {
-    max-width: 50rem;
+  .project-images img, .project-images iframe {
+    width: 50rem;
+    height: 30rem;
+    margin: 1rem;
   }
 }
 
 @media (max-width: 768px) {
-  .project-images img {
-    max-width: 20rem;
+  .project-images img, .project-images iframe {
+    width: 30rem;
+    height: 15rem;
+    margin: 1rem;
   }
 }
 
@@ -291,7 +312,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid red;
 }
 
 .about .about-container .about-item {
@@ -450,6 +470,34 @@ html {
   }
 }
 
+.top {
+  height: 10vh;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top a {
+  text-decoration: none;
+  color: rgba(255, 166, 158, 0.5);
+  cursor: pointer;
+}
+
+.top a:hover {
+  color: #ffa69e;
+}
+
 footer {
   border: 2px solid green;
   height: 10vh;
@@ -476,9 +524,5 @@ footer p {
 
 footer i {
   color: #ffa69e;
-}
-
-body {
-  border: 2px solid black;
 }
 /*# sourceMappingURL=styles.css.map */
