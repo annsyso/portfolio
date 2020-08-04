@@ -261,14 +261,9 @@ html {
   }
 }
 
-.project-images img, .project-images iframe {
-  border: 2px solid red;
-}
-
 @media (min-width: 769px) {
   .project-images img, .project-images iframe {
     width: 50rem;
-    height: 30rem;
     margin: 1rem;
   }
 }
@@ -276,8 +271,19 @@ html {
 @media (max-width: 768px) {
   .project-images img, .project-images iframe {
     width: 30rem;
-    height: 15rem;
     margin: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .project-images iframe {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-images iframe {
+    height: 15rem;
   }
 }
 
