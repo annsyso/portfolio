@@ -1,44 +1,10 @@
-#project-header {
-    .navbar {
-        height: 10vh;
-        border-bottom: 3px solid $pink;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-between;
-        color: $dark;
-        padding: 0 3rem;
 
-        ul {
-            display: flex;
-            flex-direction: row;
+// WORK HEADER - same for mobile and desktop
 
-            li {
-                list-style: none;
-
-                a {
-                    text-decoration: none;
-                    cursor: pointer;
-                    color: $dark;
-                    margin-left: 2rem;
-                    font-size: 1.1rem;
-                    font-weight: weights(light);
-
-                    &:hover,
-                    &:active {
-                        color: $pink;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-.project-container {
+.project-header {
     @include flexCenter(column);
     margin: 1rem 3rem;
+    border: 2px solid purple;
 
         h1 {
             color: $dark;
@@ -62,13 +28,23 @@
         }
     }
 
-    .project-images {
-        @include flexCenter(column);
-        margin: 0 3rem;
 
-        img {
+.project-images {
+@include flexCenter(column);
+margin: 0 3rem;
+
+    img {
+        margin: 1rem;
+
+        @include desktop {
             max-width: 50rem;
-            margin: 1rem;
         }
-
+        
+        @include mobile {
+            max-width: 20rem;
+        }
     }
+
+}
+
+

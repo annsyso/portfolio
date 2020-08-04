@@ -28,12 +28,12 @@ $font-weights: (
 // devices
 
 @mixin mobile {
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
         @content;
     }
 }
 @mixin desktop {
-    @media (min-width: 376px) {
+    @media (min-width: 769px) {
         @content;
     }
 }
@@ -47,7 +47,7 @@ $font-weights: (
     align-items: center;
 }
 
-// resets
+// resets 
 
 * {
     margin: 0;
@@ -56,7 +56,15 @@ $font-weights: (
 }
 
 html {
-    font-size: 15px;
     font-family: $main;
     color: $dark;
+
+    @include desktop {
+        font-size: 16px;
+    }
+
+    @include mobile {
+        font-size: 12px;
+    }
 }
+
