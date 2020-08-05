@@ -362,15 +362,12 @@ html {
   text-decoration: none;
 }
 
-#header i {
+#header .header-about i.down {
+  font-size: 1.3rem;
   color: rgba(255, 166, 158, 0.5);
 }
 
-#header i.down {
-  font-size: 1.3rem;
-}
-
-#header i:hover {
+#header .header-about i.down:hover {
   color: #ffa69e;
 }
 
@@ -477,9 +474,12 @@ html {
     position: absolute;
     top: 1.5rem;
     right: 3rem;
-    color: #fff;
   }
-  .navbar .main-menu .closed-menu:hover {
+  .navbar .main-menu .closed-menu i {
+    color: #fff;
+    z-index: 10;
+  }
+  .navbar .main-menu .closed-menu i:hover {
     color: #5e6472;
   }
   .navbar .main-menu li a {
