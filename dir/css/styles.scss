@@ -20,7 +20,6 @@
 
     .header-about {
       i.down {
-        font-size: 1.3rem;
         color: rgba($pink, 0.5);
 
         &:hover {
@@ -56,6 +55,12 @@
 
 // desktop navigation styling
 @include desktop {
+
+  .header-about {
+    i.down {
+      font-size: 1.3rem;
+    }
+  }
 
   .navbar {
 
@@ -94,6 +99,13 @@
 // mobile navigation styling
 
 @include mobile {
+
+  .header-about {
+    i.down {
+      padding-top:1rem;
+      font-size: 2rem;
+    }
+  }
 
   .navbar {
 

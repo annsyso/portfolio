@@ -363,7 +363,6 @@ html {
 }
 
 #header .header-about i.down {
-  font-size: 1.3rem;
   color: rgba(255, 166, 158, 0.5);
 }
 
@@ -405,6 +404,9 @@ html {
 }
 
 @media (min-width: 769px) {
+  .header-about i.down {
+    font-size: 1.3rem;
+  }
   .navbar .open-menu i {
     display: none;
   }
@@ -437,6 +439,10 @@ html {
 }
 
 @media (max-width: 768px) {
+  .header-about i.down {
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
   .navbar .open-menu {
     display: block;
     font-size: 1.5rem;
