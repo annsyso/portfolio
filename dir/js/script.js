@@ -1,9 +1,11 @@
 const mainMenu = document.querySelector('.main-menu');
 const closedMenu = document.querySelector('.closed-menu');
 const openMenu = document.querySelector('.open-menu');
+const workLink = document.getElementById('work-link');
 
 openMenu.addEventListener('click', show);
 closedMenu.addEventListener('click', close);
+workLink.addEventListener('click', close);
 
 function show() {
     mainMenu.style.display = 'flex';
