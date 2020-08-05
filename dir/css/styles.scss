@@ -7,11 +7,16 @@
 // NAVIGATION - do not change - same for every page
 
 #header {
+  a {
+    text-decoration: none;
+  }
 
     h1 {
       color: $pink;
       font-size: 1.4rem;
       cursor: pointer;
+      text-decoration: none;
+    
     }
 
     i{

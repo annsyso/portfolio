@@ -351,10 +351,15 @@ html {
   color: #ffa69e;
 }
 
+#header a {
+  text-decoration: none;
+}
+
 #header h1 {
   color: #ffa69e;
   font-size: 1.4rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #header i {
