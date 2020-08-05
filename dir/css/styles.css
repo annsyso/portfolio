@@ -528,7 +528,6 @@ html {
 }
 
 footer {
-  border: 2px solid green;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;

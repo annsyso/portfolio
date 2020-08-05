@@ -185,7 +185,6 @@
 // FOOTER - do not change - same for every page - DESKTOP AND MOBILE
 
 footer {
-    border: 2px solid green;
     height: 10vh;
     @include flexCenter(column);
     border-top: 3px solid $pink;
